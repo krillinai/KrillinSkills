@@ -5,7 +5,7 @@ description: Generate or specify infographics by five dimensions—ratio, style,
 
 # Infographic Skill
 
-Use this skill when the user needs **infographics** (information graphics, data viz, explanatory visuals). Clarify requirements along the five dimensions, then combine with canvas/design capabilities to produce outputs.
+Use this skill when the user needs **infographics** (information graphics, data viz, explanatory visuals). Clarify requirements along the five dimensions, then produce outputs.
 
 ## Five dimensions (aligned with docs/infographic/dimensions.md)
 
@@ -24,14 +24,6 @@ Full options and notes: [docs/infographic/dimensions.md](../../docs/infographic/
 - User mentions infographics, information visualization, or “make a graphic with this ratio/style/layout.”
 - User needs to choose or specify one or more of: ratio, style, layout, language, color.
 - User wants to browse samples by style or layout: point to [samples/infographic/](../../samples/infographic/) (by-style, by-layout).
-
-## Integration with existing skills
-
-- **Poster / canvas / static visuals**: Prefer **canvas-design** (design philosophy + visual expression); apply the five dimensions in the design brief (ratio, style, layout, language, color).
-- **Cover images**: See **baoyu-cover-image** and similar; infographic dimensions can constrain cover style/layout.
-- **PPT**: See **ppt-generator**; infographics can drive slide or diagram specs (ratio, style, color aligned with the deck).
-
-This repo is the single place for **dimension definitions and sample galleries**; actual generation is done by the above skills or tools.
 
 ## Sample locations
 
