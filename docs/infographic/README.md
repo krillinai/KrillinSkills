@@ -1,26 +1,26 @@
-# 信息图
+# Infographics
 
-信息图以五维度定义：**比例**、**风格**、**布局**、**语言**、**配色**。
+Infographics are defined by five dimensions: **ratio**, **style**, **layout**, **language**, **color**.
 
-- 维度选项与说明：[dimensions.md](./dimensions.md)
-- 样片索引：见下方。
+- Dimension options and notes: [dimensions.md](./dimensions.md)
+- Sample index: below.
 
-## 样片索引
+## Sample index
 
-### 按风格（by-style）
+### By style (by-style)
 
-| 风格 | 路径 | 说明 |
-|------|------|------|
-| 扁平 | [samples/infographic/by-style/flat/](../../samples/infographic/by-style/flat/) | 无立体阴影 |
-| 手绘 | [samples/infographic/by-style/hand-drawn/](../../samples/infographic/by-style/hand-drawn/) | 线条/涂鸦感 |
+| Style | Path | Notes |
+|-------|------|-------|
+| Flat | [samples/infographic/by-style/flat/](../../samples/infographic/by-style/flat/) | No depth/shadow |
+| Hand-drawn | [samples/infographic/by-style/hand-drawn/](../../samples/infographic/by-style/hand-drawn/) | Line/sketch feel |
 
-更多风格目录见 [samples/infographic/by-style/](../../samples/infographic/by-style/)。
+More style directories: [samples/infographic/by-style/](../../samples/infographic/by-style/).
 
-### 按布局（by-layout）
+### By layout (by-layout)
 
-| 布局 | 路径 | 说明 |
-|------|------|------|
-| 单栏 | [samples/infographic/by-layout/single-column/](../../samples/infographic/by-layout/single-column/) | 单栏版式 |
-| 多栏 | [samples/infographic/by-layout/multi-column/](../../samples/infographic/by-layout/multi-column/) | 多栏版式 |
+| Layout | Path | Notes |
+|--------|------|-------|
+| Single-column | [samples/infographic/by-layout/single-column/](../../samples/infographic/by-layout/single-column/) |
+| Multi-column | [samples/infographic/by-layout/multi-column/](../../samples/infographic/by-layout/multi-column/) |
 
-更多布局目录见 [samples/infographic/by-layout/](../../samples/infographic/by-layout/)。
+More layout directories: [samples/infographic/by-layout/](../../samples/infographic/by-layout/).

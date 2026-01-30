@@ -1,43 +1,43 @@
 # KrillinSkills
 
-信息图与视觉类 **Skill 大集合**：统一维度说明、Cursor Skill 定义与样片展示，便于生成与扩展。
+A **skill collection** for infographics and visual content: unified dimension specs, Cursor Skill definitions, and sample galleries for generation and extension.
 
-## 信息图（当前）
+## Infographics (current)
 
-信息图按五维度定义与展示：
+Infographics are defined and presented along five dimensions:
 
-| 维度 | 说明 |
-|------|------|
-| **比例** | 画布宽高比（16:9, 4:3, 1:1, 3:4, 9:16） |
-| **风格** | 视觉风格（扁平、手绘、渐变、商务、极简、插画） |
-| **布局** | 版式结构（单栏、多栏、网格、时间轴、中心放射、左右分栏） |
-| **语言** | 文案/界面语言（zh-CN, en） |
-| **配色** | 主色/色板（ocean, warm, mono 等） |
+| Dimension | Description |
+|-----------|-------------|
+| **Ratio** | Aspect ratio (16:9, 4:3, 1:1, 3:4, 9:16) |
+| **Style** | Visual style (flat, hand-drawn, gradient, business, minimal, illustration) |
+| **Layout** | Page structure (single-column, multi-column, grid, timeline, radial, two-column) |
+| **Language** | Copy/UI language (zh-CN, en) |
+| **Color** | Palette (ocean, warm, mono, etc.) |
 
-- **Skill**：[skills/infographic/SKILL.md](skills/infographic/SKILL.md)
-- **维度文档**：[docs/infographic/dimensions.md](docs/infographic/dimensions.md)
-- **样片**：按风格 [samples/infographic/by-style/](samples/infographic/by-style/)，按布局 [samples/infographic/by-layout/](samples/infographic/by-layout/)；索引见 [docs/infographic/README.md](docs/infographic/README.md)。
+- **Skill**: [skills/infographic/SKILL.md](skills/infographic/SKILL.md)
+- **Dimensions**: [docs/infographic/dimensions.md](docs/infographic/dimensions.md)
+- **Samples**: by style [samples/infographic/by-style/](samples/infographic/by-style/), by layout [samples/infographic/by-layout/](samples/infographic/by-layout/); index in [docs/infographic/README.md](docs/infographic/README.md).
 
-## 后续扩展
+## Future types
 
-将沿用同一套结构（skills / docs / samples），按类型分目录：
+The same structure (skills / docs / samples) will be reused, with one directory per type:
 
-- **封面图**（cover）
-- **文章配图**（article-figure）
-- **海报**（poster）
-- **PPT**（ppt）
+- **Cover** (cover)
+- **Article figure** (article-figure)
+- **Poster** (poster)
+- **PPT** (ppt)
 
-占位目录已预留，见 [skills/](skills/) 下 `cover/`、`article-figure/`、`poster/`、`ppt/`。
+Placeholder directories are under [skills/](skills/): `cover/`, `article-figure/`, `poster/`, `ppt/`.
 
-## 仓库结构概览
+## Repository structure
 
 ```
-skills/       # Cursor Skill 定义（按类型）
-docs/         # 维度与说明文档
-samples/      # 样片资源（按类型 + 风格/布局等）
-scripts/      # 仓库维护脚本
+skills/       # Cursor Skill definitions (by type)
+docs/         # Dimension and reference docs
+samples/      # Sample assets (by type, style, layout, etc.)
+scripts/      # Repo maintenance scripts
 ```
 
-## 本地与远程
+## Local and remote
 
-若需首次在 GitHub 创建本仓库并推送，见 [scripts/create-remote.sh](scripts/create-remote.sh) 及该脚本内说明（需先 `gh auth login`）。
+To create this repo on GitHub and push for the first time, see [scripts/create-remote.sh](scripts/create-remote.sh) and the notes inside (run `gh auth login` first).

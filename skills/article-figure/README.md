@@ -1,3 +1,3 @@
-# 文章配图 Skill（预留）
+# Article figure Skill (placeholder)
 
-后续在此目录添加文章配图相关的 SKILL.md 与说明。本仓库负责统一维度与样片展示。
+Add SKILL.md and notes for article figures here later. This repo keeps dimensions and sample galleries consistent.

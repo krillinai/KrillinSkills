@@ -1,54 +1,54 @@
-# 信息图五维度
+# Infographic dimensions
 
-本文档维护信息图的五个维度及其可选值，供 Skill 与生成器一致引用。可后续增删选项。
+This doc maintains the five dimensions and their options for consistent use by Skills and generators. Options can be added or removed later.
 
-## 1. 比例（画布宽高比）
+## 1. Ratio (aspect ratio)
 
-| 选项   | 说明       |
-|--------|------------|
-| 16:9   | 横屏宽屏   |
-| 4:3    | 横屏标准   |
-| 1:1    | 正方形     |
-| 3:4    | 竖屏标准   |
-| 9:16   | 竖屏全屏   |
+| Option | Description |
+|--------|-------------|
+| 16:9   | Widescreen landscape |
+| 4:3    | Standard landscape |
+| 1:1    | Square |
+| 3:4    | Standard portrait |
+| 9:16   | Full-height portrait |
 
-## 2. 风格（视觉风格）
+## 2. Style (visual style)
 
-| 选项   | 说明                     |
-|--------|--------------------------|
-| 扁平   | flat，无立体阴影         |
-| 手绘   | hand-drawn，线条/涂鸦感  |
-| 渐变   | gradient，多色渐变       |
-| 商务   | business，正式、图表感   |
-| 极简   | minimal，留白、少元素     |
-| 插画   | illustration，插画化     |
+| Option      | Description |
+|-------------|-------------|
+| flat        | No depth or shadow |
+| hand-drawn  | Line / sketch feel |
+| gradient    | Multi-color gradients |
+| business    | Formal, chart-like |
+| minimal     | Lots of whitespace, few elements |
+| illustration| Illustrated look |
 
-## 3. 布局（版式结构）
+## 3. Layout (page structure)
 
-| 选项     | 说明           |
-|----------|----------------|
-| 单栏     | single-column  |
-| 多栏     | multi-column   |
-| 网格     | grid           |
-| 时间轴   | timeline       |
-| 中心放射 | radial/center  |
-| 左右分栏 | two-column     |
+| Option        | Description |
+|---------------|-------------|
+| single-column | One column |
+| multi-column  | Multiple columns |
+| grid          | Grid |
+| timeline      | Timeline |
+| radial        | Radial / center-out |
+| two-column    | Left–right split |
 
-## 4. 语言（文案/界面语言）
+## 4. Language (copy / UI language)
 
-| 选项   | 说明     |
-|--------|----------|
-| zh-CN  | 简体中文 |
-| en     | 英文     |
+| Option | Description |
+|--------|-------------|
+| zh-CN  | Simplified Chinese |
+| en     | English |
 
-（可按需扩展如 zh-TW、ja 等。）
+(Extend as needed, e.g. zh-TW, ja.)
 
-## 5. 配色（主色/色板）
+## 5. Color (palette)
 
-| 预设名   | 说明           |
-|----------|----------------|
-| ocean    | 蓝绿色系       |
-| warm     | 暖色（橙/红/黄）|
-| mono     | 单色/灰度      |
+| Preset | Description |
+|--------|-------------|
+| ocean  | Blues and teals |
+| warm   | Warm (orange / red / yellow) |
+| mono   | Monochrome / grayscale |
 
-也可用色值说明（如 HEX 或主色 + 辅色）在具体需求中指定。
+Specific values (e.g. HEX or primary + accent) can be specified in individual requests.

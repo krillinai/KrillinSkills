@@ -1,5 +1,5 @@
-# 按布局呈现样片
+# Samples by layout
 
-本目录下按布局分子目录存放样片图片（如 PNG/SVG）。每个子目录可配 README 列出文件名与对应维度。
+Subdirectories here hold sample images (e.g. PNG/SVG) grouped by layout. Each subdirectory can have a README listing files and dimensions.
 
-示例：`single-column/`（单栏）、`multi-column/`（多栏）等。后续在此添加样片文件即可。
+Examples: `single-column/`, `multi-column/`. Add sample files here as needed.

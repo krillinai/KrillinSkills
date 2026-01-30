@@ -1,5 +1,5 @@
-# 按风格呈现样片
+# Samples by style
 
-本目录下按风格分子目录存放样片图片（如 PNG/SVG）。每个子目录可配 README 列出文件名与对应维度。
+Subdirectories here hold sample images (e.g. PNG/SVG) grouped by style. Each subdirectory can have a README listing files and dimensions.
 
-示例：`flat/`（扁平）、`hand-drawn/`（手绘）等。后续在此添加样片文件即可。
+Examples: `flat/`, `hand-drawn/`. Add sample files here as needed.

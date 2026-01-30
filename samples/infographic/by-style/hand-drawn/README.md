@@ -1,5 +1,5 @@
-# 手绘风格样片
+# Hand-drawn style samples
 
-本目录用于存放**手绘**（hand-drawn）风格的信息图样片（PNG/SVG 等）。
+This directory holds **hand-drawn**-style infographic samples (PNG/SVG, etc.).
 
-添加样片时请将文件放入此目录，并可在本 README 中列出文件名与简要说明（如比例、主题）。
+Add files here and optionally list filenames and short notes (e.g. ratio, topic) in this README.
