@@ -20,6 +20,28 @@ KrillinSkills is a collection of **Skills** for **content creation**, covering i
 
 ## Installation
 
+### Option 1: npx skills add (recommended)
+
+If your tool is supported by the [skills CLI](https://github.com/vercel-labs/skills), you can install with:
+
+```bash
+# List available skills
+npx skills add krillinai/KrillinSkills --list
+
+# Install all skills (project scope; use -g for global)
+npx skills add krillinai/KrillinSkills
+
+# Install specific skills
+npx skills add krillinai/KrillinSkills --skill infographic --skill video-cover
+
+# Install to specific agents (e.g. cursor, claude-code)
+npx skills add krillinai/KrillinSkills -a cursor -g
+```
+
+The CLI detects your tools and installs into the right directories. See [supported agents](https://github.com/vercel-labs/skills#supported-agents) and `npx skills add --help` for more options.
+
+### Option 2: Manual (clone and link/copy)
+
 1. **Clone this repo**
    ```bash
    git clone https://github.com/krillinai/KrillinSkills.git
@@ -32,13 +54,13 @@ KrillinSkills is a collection of **Skills** for **content creation**, covering i
 3. **Link or copy the skill folders you need into that directory**
    - Each top-level folder (e.g. `infographic`, `video-cover`) is one skill. Copy or symlink it into your tool’s skills folder, using any name your tool expects (e.g. `krillin-infographic`).
 
-   **Option A: Symbolic link (recommended, easy to update)**
+   **Symbolic link (recommended, easy to update)**
    ```bash
    # Replace <YOUR_TOOL_SKILLS_DIR> with your tool’s skills path
    ln -s "$(pwd)/infographic" <YOUR_TOOL_SKILLS_DIR>/krillin-infographic
    ```
 
-   **Option B: Copy**
+   **Copy**
    ```bash
    cp -r infographic <YOUR_TOOL_SKILLS_DIR>/krillin-infographic
    ```
