@@ -15,13 +15,13 @@ Use this skill when the user wants an **infographic, data visualization, chart, 
 
 Resolve these from the user’s request or follow-up; use defaults when unspecified.
 
-| Parameter | 说明 | Where to get | Default / options |
-|-----------|------|--------------|-------------------|
-| **Aspect ratio** | 比例 | User or platform | 16:9 (default), 4:3, 1:1 (social) |
-| **Layout** | 布局 | `resources/layouts/` or user | single-column, comparison, timeline, process, grid |
-| **Style** | 风格 | `resources/styles/` or user | Typography, spacing, visual tone (e.g. minimal, editorial) |
-| **Palette** | 配色 | `resources/palettes/` or user | Color set (hex/names); infer from style if needed |
-| **Language** | 语言 | User or content source | Language for labels, titles, and copy (e.g. en, zh) |
+| Parameter | Where to get | Default / options |
+|-----------|---------------|-------------------|
+| **Aspect ratio** | User or platform | 16:9 (default), 9:16 (portrait), 4:3, 1:1 (social) |
+| **Layout** | `resources/layouts/` or user | single-column, comparison, timeline, process, grid |
+| **Style** | `resources/styles/` or user | Typography, spacing, visual tone (e.g. minimal, editorial) |
+| **Palette** (optional) | `resources/palettes/` or user | Color set (hex/names); when unspecified, use the default palette for the chosen style |
+| **Language** | User or content source | Language for labels, titles, and copy (e.g. en, zh) |
 
 ## Workflow
 
@@ -29,7 +29,7 @@ Resolve these from the user’s request or follow-up; use defaults when unspecif
 |------|-------------|----------------|
 | 1. Clarify | Data/source, message, audience, platform (e.g. social, blog, print) | User message / follow-up |
 | 2. Layout | Choose structure (e.g. single-column, comparison, timeline, process, grid) | `resources/layouts/` if present; otherwise use common patterns below |
-| 3. Style & palette | Typography, spacing, color set | `resources/styles/`, `resources/palettes/` if present |
+| 3. Style & palette | Typography, spacing; color set optional (each style has a default palette) | `resources/styles/`, `resources/palettes/` if present |
 | 4. Create | Produce the graphic (SVG, HTML+CSS, or image generation per project convention) | — |
 | 5. Export | Format and dimensions (PNG/SVG, aspect ratio, min width) | Output spec below |
 
@@ -37,7 +37,7 @@ Resolve these from the user’s request or follow-up; use defaults when unspecif
 
 **Layout**: If no files in `resources/layouts/`, pick a common pattern — single-column (one flow), comparison (side-by-side), timeline (chronological), process (steps), or grid (cards/sections).
 
-**Style & palette**: If no resource files exist, infer from the user’s request and common infographic practice (readable type, clear hierarchy, consistent palette).
+**Style & palette**: Choose style (typography, spacing, visual tone). Palette is optional: each style has a default palette; use it when the user does not specify a palette. If the user specifies a palette or one exists in `resources/palettes/`, use that instead. If no resource files exist, infer style from the user’s request and apply that style’s default palette.
 
 **Create**: Output SVG for code-based work (preferred) or PNG; use image generation if that’s the project convention.
 
@@ -47,7 +47,7 @@ Resolve these from the user’s request or follow-up; use defaults when unspecif
 
 - **layouts**: Structure templates or layout types. See `resources/layouts/` when files exist.
 - **styles**: Typography and visual style. See `resources/styles/` when files exist.
-- **palettes**: Color sets (hex/names). See `resources/palettes/` when files exist.
+- **palettes**: Color sets (hex/names); optional. Each style defines a default palette. Files in `resources/palettes/` override or extend style defaults when present.
 
 When no files exist in these folders, infer layout, style, and palette from the user’s request and common infographic practice.
 
@@ -56,7 +56,7 @@ When no files exist in these folders, infer layout, style, and palette from the 
 | Item | Default | Notes |
 |------|---------|--------|
 | Formats | SVG (code-based), PNG (raster) | Prefer SVG when producing code |
-| Aspect ratios | 16:9 (default), 4:3, 1:1 (social) | Match user or platform when specified |
+| Aspect ratios | 16:9 (default), 9:16 (portrait), 4:3, 1:1 (social) | Match user or platform when specified |
 | Dimensions | Min width 1200px for web | Or as specified by user |
 
 ## Accessibility
